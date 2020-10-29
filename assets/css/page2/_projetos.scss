@@ -1,0 +1,114 @@
+/* PROJETOS */
+
+.projetos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    margin: 30px;
+    transition: 0.4s;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--green-tint);
+    }
+
+    .section-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 300px;
+            height: 1px;
+            background-color: var(--lightest-navy);
+            align-self: flex-start;
+            margin-right: 20px;
+            margin-top: 18px;
+        }
+    }
+
+    .content-project {
+        padding: 30px;
+        .content--individual + .content--individual {
+            margin-top: 40px;
+        }
+
+        .content--individual-model {
+            display: none;
+        }
+
+        .content--individual {
+            width: 100%;
+            padding: 20px;
+            height: auto;
+            border-radius: 5px;
+            border: 3px solid var(--green-tint);
+            display: flex;
+            transition: 0.4s;
+             font-family: $font-tec;
+
+            &:hover {
+                box-shadow: 0 0 20px var(--green);
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+
+            .content-left {
+                display: flex;
+                align-items: center;
+                a {
+                    display: none;
+                }
+                img {
+                    height: 200px;
+                    width: 400px;
+                }
+            }
+
+            .content-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    color: var(--green);
+                    letter-spacing: 4px;
+                    font-size: 40px;
+                    border-bottom: 3px solid var(--green-tint);
+                }
+
+                .content-inside {
+                    color: var(--light-slate);
+                    display: flex;
+                    margin-top: 40px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+
+                .go-to-site {
+                    margin-top: 40px;
+
+                    a {
+                        color: var(--green);
+                        text-decoration: none;
+                        padding: 20px;
+                        border: 3px solid var(--green);
+                        border-radius: 5px;
+                        transition: 0.3s;
+                    }
+                    a:hover {
+                        background-color: var(--green-tint);
+                    }                    
+                }
+                
+            }
+        }
+    }
+}

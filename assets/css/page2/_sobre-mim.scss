@@ -1,0 +1,76 @@
+
+
+/* SOBRE MIM */
+
+.sobre-mim {
+    height: auto;
+    display: flex;
+    padding: 100px;
+    margin: 30px;
+    transition: .4s;
+    &:hover {
+        box-shadow: 0 0 10px var(--green-tint);
+    }
+
+    .sobre-mim-left{
+        flex: 1;
+
+        .paragrafos p {
+            color: var(--lightest-navy);
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .tecnologias {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+            .mobile2 {
+                display: none;
+            }
+
+            p {
+                color: var(--lightest-slate);
+                transition: .4s;
+                font-family: $font-tec;
+
+                &:hover {
+                    color: var(--green);
+                    cursor: pointer;
+                }
+            }
+
+            span {
+                color: var(--green);
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .sobre-mim-right {
+        flex: 1;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 450px;
+            margin-left: 20px;
+            border: 5px solid var(--green);
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .perfil {
+            opacity: 0;
+            transition: .4s;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+

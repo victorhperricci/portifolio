@@ -1,0 +1,80 @@
+@keyframes animationHome {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.home {
+    height: auto;
+    padding: 30px;
+    margin: 10px;
+
+    p {
+        font-family: $font-tec;
+    }
+
+    p:nth-child(1) {
+        color: var(--green);
+        font-size: 20px;
+        margin-top: 30px;
+        
+    }
+
+    p:nth-child(2) {
+        color: var(--slate);
+        margin-top: 30px;
+        font-size: 80px;
+        letter-spacing: 10px;
+        font-weight: 1000;
+        
+    }
+
+    p:nth-child(3) {
+        color: var(--lightest-navy);
+        margin-top: 10px;
+        font-size: 70px;
+        letter-spacing: 10px;
+        font-weight: 1000;
+        display: inline-block;
+        
+        
+        &::after {
+            content: '|';
+            font-size: 80px;
+            color: var(--green);
+            animation: animationHome 1.3s infinite ;
+        }
+    }
+
+    p:nth-child(4) {
+        margin-top: 10px;
+        color: var(--lightest-navy);
+        width: 50%;
+        font-size: 20px;
+        display: block;
+    }
+
+    .button-contact {
+        padding-top: 70px ;
+    }
+
+    a {
+        border: 1px solid var(--green);
+        text-decoration: none;
+        padding: 25px;
+        border-radius: 5px;
+        color: var(--green);
+        transition: .3s;
+        font-family: $font-tec;
+        &:hover {
+            background-color: var(--green-tint);
+        }
+    }
+    
+}

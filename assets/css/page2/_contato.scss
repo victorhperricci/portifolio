@@ -1,0 +1,91 @@
+
+/* CONTATO */
+
+.contato {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    margin: 30px;
+    transition: .4s;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--green-tint);
+    }
+
+    .contato-titulo h1{
+        color: var(--green);
+        margin-top: 20px;
+        font-family: $font-tec;
+    }
+    
+    .redes-sociais{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        nav {
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-right: 10px;
+                width: 100px;
+                height: 100px;
+                transition: all .4s;
+                cursor: pointer;  
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+
+                &:nth-child(1) {
+                    background-image: url('/assets/img/imgsRedes/facebook1.png');
+                            
+                    &:hover {
+                        background-image: url('/assets/img/imgsRedes/facebook2.png');
+                    }
+                }
+
+                &:nth-child(2) {
+                    background-image: url('/assets/img/imgsRedes/instagram1.png');
+                            
+                    &:hover {
+                        background-image: url('/assets/img/imgsRedes/instagram2.png');
+                    } 
+                }
+
+                &:nth-child(3) {
+                    background-image: url('/assets/img/imgsRedes/linkedin1.png');
+                            
+                    &:hover {
+                        background-image: url('/assets/img/imgsRedes/linkedin2.png');
+                    } 
+                }
+
+                &:nth-child(4) {
+                    background-image: url('/assets/img/imgsRedes/whats1.png');
+                            
+                    &:hover {
+                        background-image: url('/assets/img/imgsRedes/whats2.png');
+                    } 
+                }
+            }
+        }
+
+        .form {
+            margin-top: 80px;
+            width: calc(100% + 200px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-family: $font-tec;
+                color: var(--green);
+            }
+        }
+    }
+}
+

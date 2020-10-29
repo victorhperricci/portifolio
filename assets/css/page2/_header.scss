@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            line-height: 100px;
+            height: 100px;
+            list-style: none;
+            transition: .3s;
+            
+            &::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 4px;
+                background-color: var(--green);
+                transition: width .4s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            a {
+                padding: 30px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 20px;
+                color: #fff;
+                transition: .3s;
+                font-family: $font-tec;
+            }
+
+            a:hover {
+                color: var(--green);
+            }
+        }
+    }
+
+    .logo img {
+        height: 70px;
+    }
+}
+
+
