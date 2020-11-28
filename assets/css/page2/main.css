@@ -800,6 +800,7 @@ footer p {
     opacity: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
+    z-index: 99;
   }
   .back-top a {
     color: #64ffda;
