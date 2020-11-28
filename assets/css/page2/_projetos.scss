@@ -41,13 +41,13 @@
 
         .content--individual {
             width: 100%;
-            padding: 20px;
+            padding: 30px;
             height: auto;
             border-radius: 5px;
             border: 3px solid var(--green-tint);
             display: flex;
             transition: 0.4s;
-             font-family: $font-tec;
+            font-family: $font-tec;
 
             &:hover {
                 box-shadow: 0 0 20px var(--green);
@@ -64,6 +64,9 @@
                 img {
                     height: 200px;
                     width: 400px;
+
+                    border-radius: 5px;
+                    object-fit: cover;
                 }
             }
 

@@ -30,6 +30,7 @@ body {
 .container-principal {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* CLASSES */
@@ -84,7 +85,80 @@ body {
   }
 }
 
+[data-anime-home="top"] {
+  -webkit-transform: translate3d(0, -50px, 0);
+          transform: translate3d(0, -50px, 0);
+  opacity: 0;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+[data-anime-home="top"].animate {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+[data-anime="left"] {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+[data-anime="right"] {
+  -webkit-transform: translate3d(50px, 0, 0);
+          transform: translate3d(50px, 0, 0);
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+[data-anime="top"] {
+  -webkit-transform: translate3d(0, -50px, 0);
+          transform: translate3d(0, -50px, 0);
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+[data-anime="bottom"] {
+  -webkit-transform: translate3d(0, 50px, 0);
+          transform: translate3d(0, 50px, 0);
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+[data-anime].animate {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.shadow-active {
+  -webkit-box-shadow: 0px 5px 0px var(--green), 0px 6px 0px var(--green-tint);
+          box-shadow: 0px 5px 0px var(--green), 0px 6px 0px var(--green-tint);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .header {
+  position: fixed;
+  background-color: var(--dark-navy);
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +168,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
+  height: auto;
 }
 
 .header input[type="checkbox"] {
@@ -175,8 +249,8 @@ body {
 
 .home {
   height: auto;
-  padding: 30px;
-  margin: 10px;
+  padding: 110px 30px 30px 30px;
+  margin: 0px;
 }
 
 .home p {
@@ -299,7 +373,7 @@ body {
 
 .projetos .content-project .content--individual {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   height: auto;
   border-radius: 5px;
   border: 3px solid var(--green-tint);
@@ -335,6 +409,9 @@ body {
 .projetos .content-project .content--individual .content-left img {
   height: 200px;
   width: 400px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projetos .content-project .content--individual .content-right {
@@ -601,52 +678,6 @@ body {
   color: var(--green);
 }
 
-.contato .redes-sociais .form form {
-  margin-top: 30px;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid var(--green);
-  height: auto;
-  padding: 20px;
-}
-
-.contato .redes-sociais .form form .content-form + .content-form {
-  margin-top: 30px;
-}
-
-.contato .redes-sociais .form form label {
-  display: block;
-  font-family: "Share Tech Mono", monospace;
-  color: var(--green);
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.contato .redes-sociais .form form input[type="submit"] {
-  font-family: "Share Tech Mono", monospace;
-  color: var(--green);
-  cursor: pointer;
-}
-
-.contato .redes-sociais .form form input[type="submit"]:hover {
-  background-color: var(--green-tint);
-}
-
-.contato .redes-sociais .form form input, .contato .redes-sociais .form form textarea {
-  width: 100%;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: var(--dark-navy);
-  border: 1px solid var(--green);
-  outline: none;
-  color: var(--slate);
-  resize: vertical;
-}
-
-.contato .redes-sociais .form form input:focus, .contato .redes-sociais .form form textarea:focus {
-  border: 2px solid var(--green);
-}
-
 footer {
   width: 100%;
   height: 100px;
@@ -667,7 +698,20 @@ footer p {
   font-family: "Share Tech Mono", monospace;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .header .logo img {
+    height: 60px;
+  }
   .header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -717,7 +761,6 @@ footer p {
     display: block;
     cursor: pointer;
     position: absolute;
-    top: 20px;
     right: 20px;
     height: 22px;
     width: 30px;
@@ -743,11 +786,12 @@ footer p {
   }
   .back-top {
     position: fixed;
-    right: 20px;
-    top: 50%;
-    height: 30px;
-    width: 30px;
-    border: 2px solid var(--green);
+    left: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+    border: 2px solid #64ffda;
+    background-color: var(--dark-navy);
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -758,7 +802,7 @@ footer p {
     transition: all .5s;
   }
   .back-top a {
-    color: var(--green);
+    color: #64ffda;
     width: 100%;
     height: 100%;
     font-size: 20px;
@@ -1011,6 +1055,11 @@ footer p {
         -ms-flex-order: 1;
             order: 1;
   }
+  .projetos .content-project .content--individual .content-left img {
+    margin: 15px 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .projetos .content-project .content--individual .content-left a {
     display: block;
     margin-top: 10px;
@@ -1019,9 +1068,14 @@ footer p {
     border-radius: 5px;
     text-decoration: none;
     color: var(--green);
+    width: 50%;
+    text-align: center;
   }
   .projetos .content-project .content--individual .content-left a:hover {
     background-color: var(--green-tint);
+  }
+  .projetos .content-project .content--individual .content-right h1 {
+    text-align: center;
   }
   .go-to-site {
     display: none;

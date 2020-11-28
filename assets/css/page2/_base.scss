@@ -7,6 +7,7 @@
 // FONTE 
 
 $font-tec: 'Share Tech Mono', monospace;
+$green: #64ffda;
 
 :root {  
     --dark-navy: #020c1b;
@@ -44,6 +45,8 @@ body {
 .container-principal {
     max-width: 1300px;
     margin: 0 auto;
+
+    position: relative;
 }
 
 /* CLASSES */
