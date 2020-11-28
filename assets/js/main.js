@@ -103,12 +103,7 @@ function initProjectsScroll() {
         const projects = cs('.content--individual')
         
         projects.forEach((item, index) => {
-    
-            if (index % 2 == 0) {
-                item.setAttribute('data-anime', 'left')
-            } else {
-                item.setAttribute('data-anime', 'right')
-            }
+            item.setAttribute('data-anime', 'top')
         })
     }
     
