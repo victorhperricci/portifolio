@@ -240,6 +240,7 @@
 @media (max-width: 550px) {
 
     .home {
+       
         p:nth-child(2) {
             font-size: 25px;
             letter-spacing: 7px;
@@ -263,7 +264,7 @@
 }    
  @media (max-width: 409px) {
      .home {
-         padding: 10px;
+         padding: 110px 10px 10px 10px;
      }
  }
 
@@ -396,7 +397,7 @@
                         text-decoration: none;
                         color: var(--green);
 
-                        width: 50%;
+                        width: 100%;
 
                         text-align: center;
                     }
@@ -451,13 +452,19 @@
     }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 426px) {
     .projetos {
         padding: 10px;
+        margin: 0 auto;
         .content-project {
             .content--individual {
-                padding: 10px;
-                min-width: 200px;
+                padding: 20px;
+                min-width: 250px;
+
+
+                .content-right h1 {
+                    font-size: 25px;
+                }
             }
         }
     }
