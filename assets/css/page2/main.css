@@ -603,7 +603,7 @@ img {
   margin-top: 20px;
   font-family: "Share Tech Mono", monospace;
   width: 100%;
-  font-size: clamp(1rem, 2vw, 7rem);
+  font-size: clamp(1.5rem, 2vw, 7rem);
 }
 
 .contato .redes-sociais {
@@ -618,6 +618,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 70px;
 }
 
 .contato .redes-sociais nav {
@@ -693,6 +694,7 @@ footer {
 footer p {
   font-weight: 900;
   font-family: "Share Tech Mono", monospace;
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 
 @media only screen and (max-width: 800px) {
