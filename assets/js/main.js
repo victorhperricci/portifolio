@@ -84,7 +84,7 @@ function initScrollAnimate() {
     
 
     function scrollDatasPage(item) {
-        const windowHeight = window.innerHeight * 0.7;
+        const windowHeight = window.innerHeight * 0.6;
             const top = item.getBoundingClientRect().top;
             const isSectionVisible = (windowHeight - top) > 0;
 

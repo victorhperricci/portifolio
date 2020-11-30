@@ -17,6 +17,8 @@ $green: #64ffda;
     --lightest-slate: #ccd6f6;
     --green: #64ffda;
     --green-tint: rgba(26, 59, 52, 0.1);
+
+    font-size: 62.5%;
 }
 
 // .dark-mode:root {
@@ -32,6 +34,10 @@ $green: #64ffda;
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+}
+
+img {
+    object-fit: cover;
 }
 
 /* Container que pega tudo */
@@ -53,7 +59,7 @@ body {
 
 .section-titulo {
     p {
-        font-size: 30px;
+        font-size: clamp(3rem, 3vw, 7rem);
         color: var(--lightest-slate);
         font-family: $font-tec;
         p::after {

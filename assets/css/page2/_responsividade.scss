@@ -125,41 +125,19 @@
 
 // HOME 
 
-
-@media (max-width: 1254px) {
+@media (min-width: 1111px) and (max-width: 2000px) {
     .home {
-        p:nth-child(3) {
-            font-size: 60px;
-            letter-spacing: 7px;     
-        }
-        p:nth-child(3)::after {
-            font-size: 6s0px;
+        p:nth-child(4) {
+            width: 60%;
         }
     }
 }
 
-
 @media (max-width: 1110px) {
 
     .home {
-        p:nth-child(2) {
-            font-size: 50px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3) {
-            font-size: 40px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3)::after {
-            font-size: 40px;
-        }
-
-        p:nth-child(4) {
+         p:nth-child(4) {
             width: 70%;
-            font-size: 15px;
-            letter-spacing: 2px;
         }
     }
 }
@@ -167,18 +145,8 @@
 @media (max-width: 840px) {
 
     .home {
-        p:nth-child(3) {
-            font-size: 34px;
-            letter-spacing: 7px;
-        }
-        p:nth-child(3)::after {
-           font-size: 34px;            
-        }
-
         p:nth-child(4) {
             width: 60%;
-            font-size: 15px;
-            letter-spacing: 2px;
         }
         .section-titulo p::after {
             content: '';
@@ -191,75 +159,18 @@
 @media (max-width: 730px) {
 
     .home {
-        p:nth-child(2) {
-            font-size: 40px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3) {
-            font-size: 30px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3)::after {
-            font-size: 30px;
-        }
-
         p:nth-child(4) {
             width: 80%;
-            font-size: 15px;
-            letter-spacing: 2px;
         }
     }
 }
 
-@media (max-width: 680px) {
-
-    .home {
-        p:nth-child(1) {
-            color: var(--green);
-            font-size: 20px;
-            margin-top: 30px;
-        }
-
-        p:nth-child(2) {
-            font-size: 30px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3) {
-            font-size: 25px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3)::after{
-            font-size: 25px;
-
-        }
-    }
-}
 
 @media (max-width: 550px) {
 
     .home {
-       
-        p:nth-child(2) {
-            font-size: 25px;
-            letter-spacing: 7px;
-        }
-
-        p:nth-child(3) {
-            font-size: 20px;
-            letter-spacing: 3px;
-        }
-
-        p:nth-child(3)::after {
-            font-size: 20px;
-        }
-
         p:nth-child(4) {
             width: 100%;
-            font-size: 13px;
             margin-top: 20px;
         }
     }
@@ -272,7 +183,59 @@
 
  // SOBRE - MIM 
 
- 
+@media (min-width: 1440px) {
+    .sobre-mim {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 50px;
+        margin: 10px;
+
+        .sobre-mim-left{
+            .tecnologias {
+                .mobile {
+                    display: none;
+                }
+    
+                .mobile2 {
+                    justify-self: end;
+                    display: block;
+                }
+                
+                .mobile2 span {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .sobre-mim-right {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+
+            img {  
+                height: 500px;
+                width: 50%;
+                min-width: 300px;
+                position: relative;
+                border: 3px solid var(--green-tint);
+                border-radius: 20%;
+
+                object-fit: cover;
+            }
+
+            .perfil {
+                opacity: 1;
+            }
+
+            .perfilverde {
+                display: none;
+            }
+        }
+    }
+}
 
 @media (max-width: 1110px) {
     .sobre-mim {
