@@ -4,7 +4,7 @@ let projectsJSON = [
         src: "./assets/img/imgsProjects/wildbeast.png",
         titulo: "WildBeast",
         paragrafo1: "Site feito com o curso de CSS Grid - Origamid <br> Foi utilizado apenas CSS & HTML5",
-        botaoADiretorio: "https://wildbeastsite.netlify.app",
+        botaoADiretorio: "https://wild-beast.netlify.app/",
         botaoRepositorio: "https://github.com/VictorHAP1603/wildBeast",
         tecnologias: [
             "CSS",
@@ -16,7 +16,7 @@ let projectsJSON = [
         src: "./assets/img/imgsProjects/buypizzas.png",
         titulo: "BuyPizzas",
         paragrafo1: "Site feito com o curso de JavaScript - B7 Web <br> Foi utilizado apenas CSS & HTML5 & JavaScript",
-        botaoADiretorio: "https://buy-pizzas.netlify.app",
+        botaoADiretorio: "https://buypizzas.netlify.app/",
         botaoRepositorio: "https://github.com/VictorHAP1603/buypizza",
         tecnologias: [
             "CSS",
