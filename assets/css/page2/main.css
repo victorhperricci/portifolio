@@ -771,7 +771,7 @@ footer {
 footer p {
   font-weight: 900;
   font-family: "Share Tech Mono", monospace;
-  font-size: clamp(1.5rem, 1.5vw, 3rem);
+  font-size: clamp(1rem, 1.5vw, 3rem);
 }
 
 @media only screen and (max-width: 800px) {
@@ -1217,6 +1217,9 @@ footer p {
 }
 
 @media (max-width: 725px) {
+  .contato {
+    padding-bottom: 80px;
+  }
   .contato .redes-sociais nav a {
     width: 70px;
     height: 70px;

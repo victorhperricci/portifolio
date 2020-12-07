@@ -466,6 +466,7 @@
 @media (max-width: 800px) {
     
     .contato {
+        
         .redes-sociais nav a {
             &:hover {
                 transform: translateY(0px);
@@ -489,6 +490,7 @@
 @media (max-width: 725px) {
     
     .contato {
+        padding-bottom: 80px;
         .redes-sociais nav a {
             width: 70px;
             height: 70px;
