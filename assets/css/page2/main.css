@@ -796,7 +796,7 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 90px;
+    top: 100px;
     width: 0%;
     left: 0;
     -webkit-transition: all .5s;
