@@ -63,7 +63,7 @@
                 }
                 img {
                     height: clamp(20rem, 2vw, 50rem);
-                    width: 400px;
+                    max-width: 100%;
             
                     border-radius: 5px;
                     object-fit: cover;
@@ -83,6 +83,7 @@
                     border-bottom: 3px solid var(--green-tint);
 
                     text-align: center;
+                    padding: 0 20px;
                 }
 
                 .content-inside {
