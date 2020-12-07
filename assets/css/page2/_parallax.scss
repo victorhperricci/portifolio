@@ -1,0 +1,58 @@
+.parallax {
+    background-color: var(--green);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    
+    .fundo-verde {
+        width: 100%;
+        height: 100%;
+        background-color: var(--dark-navy);
+        position: relative;
+        opacity: 0.8;
+       
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        position: absolute;
+        color: var(--slate);
+        font-family: $font-tec;
+
+        font-size: clamp(5rem, 6vw, 8rem);
+
+        &::after {
+            content: '';
+            display: block;
+
+            height: 6px;
+            width: 60%;
+            background-color: var(--slate);
+            margin: 0 auto;
+
+        }
+    }
+}
+
+.p-sobremim {
+    background-image: url('/assets/img/parallax/sobremim.jpg');
+}
+
+.p-projetos {
+    background-image: url('/assets/img/parallax/projetos.jpg');
+}
+
+.p-contato {
+    background-image: url('/assets/img/parallax/contato.jpg');
+}

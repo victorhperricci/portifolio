@@ -11,130 +11,145 @@
 
 <body>
     <div class="container-geral">
-        <div class="container-principal">
-            <header class="header" id="header">
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/img/logo.png" alt="Logo">
-                    </div>
-                    <div class="menu-hamb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#sobre-mim">Sobre mim</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-
-                    </nav>
+        <header class="header " id="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="Logo">
                 </div>
-            </header>
-            <div class="back-top">
-                <a href="#home">↑</a>
+                <div class="menu-hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre-mim">Sobre mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+
+                </nav>
             </div>
-            <section class="home" id="home">
-                <div class="paraHome">
-                    <p class="name--apresentation" data-anime-home="top">Olá, meu nome é</p>
-                    <p data-anime-home="top">Victor Hugo</p>
-                    <p class="apresentation">Sou Front-End Developer</p>
-                    <p data-anime-home="top">Desenvolvedor Front-End, me especializando em construir sites, aplicativos, e todas as coisas
-                        dentro
-                        desse universo.</p>
-                </div>
-                <div class="button-contact " data-anime-home="top">
-                    <a href="Currículo-Victor.pdf" download>Baixar CV</a>
-                </div>
-            </section>
+        </header>
+        <div class="back-top">
+            <a href="#home">↑</a>
+        </div>
+        <section class="home container" id="home">
+            
+            <p class="name--apresentation" data-anime-home="top">Olá, meu nome é</p>
+            <p data-anime-home="top">Victor Hugo</p>
+            <p class="apresentation">Sou Front-End Developer</p>
+            <p data-anime-home="top">Desenvolvedor Front-End, me especializando em construir sites, aplicativos, e todas as coisas
+                dentro
+                desse universo.</p>
+            
+            <div class="button-contact " data-anime-home="top">
+                <a href="Currículo-Victor.pdf" download>Baixar CV</a>
+            </div>
+        </section>
 
-            <section class="sobre-mim" id="sobre-mim">
-                <div class="sobre-mim-left">
-                    <div class="section-titulo" data-anime="left">
-                        <p><span>01.</span> Sobre Mim</p>
+        <section class="parallax p-sobremim">
+            <div class="fundo-verde"></div>
+            <h1>SOBRE MIM</h1>
+        </section>
+
+        <section class="sobre-mim container" id="sobre-mim">
+            <div class="sobre-mim-left">
+                <div class="section-titulo" data-anime="left">
+                    <p><span>01.</span> Sobre Mim</p>
+                </div>
+
+                <div class="paragrafos">
+                    <p data-anime="top">Olá!! Eu sou o Victor, estudante de Sistemas de Informações</p>
+                    <p data-anime="top">Gosto de criar coisas que vivem na internet, sejam elas sites, aplicativos ou qualquer outra
+                        forma que exista. Meu objetivo é sempre construir produtos que forneçam experiências
+                        perfeitas e de alto desempenho para o cliente.</p>
+                    <p data-anime="top">Estou cursando graduação de Sistemas de Informações em Centro Universitário Fundação Santo
+                        André e estudando por fora diversos cursos sobre Front-End</p>
+                    <p data-anime="top">Aqui estão as tecnologias que venho estudando ultimamente:</p>
+
+                    <div class="tecnologias" data-anime="top">
+                        <p><span>-</span>HTML & CSS</p>
+                        <p class="mobile"><span>-</span>JavaScript</p>
+                        <!-- mobile -->
+                        <p class="mobile2">JavaScript<span>-</span></p>
+                        <!-- ------- -->
+                        <p><span>-</span>Node.js</p>
+                        <p class="mobile"><span>-</span>React JS</p>
+                        <!-- mobile -->
+                        <p class="mobile2">React JS<span>-</span></p>
+                        <!-- ------- -->
                     </div>
+                </div>
+            </div>
+            <div class="sobre-mim-right" data-anime="bottom">
+                <img src="./assets/img/perfilverde.png" alt="Perfil" class="perfilverde">
+                <img src="./assets/img/perfil.png" alt="Perfil" class="perfil">
+            </div>
+        </section>
 
-                    <div class="paragrafos">
-                        <p data-anime="top">Olá!! Eu sou o Victor, estudante de Sistemas de Informações</p>
-                        <p data-anime="top">Gosto de criar coisas que vivem na internet, sejam elas sites, aplicativos ou qualquer outra
-                            forma que exista. Meu objetivo é sempre construir produtos que forneçam experiências
-                            perfeitas e de alto desempenho para o cliente.</p>
-                        <p data-anime="top">Estou cursando graduação de Sistemas de Informações em Centro Universitário Fundação Santo
-                            André e estudando por fora diversos cursos sobre Front-End</p>
-                        <p data-anime="top">Aqui estão as tecnologias que venho estudando ultimamente:</p>
+        <section class="parallax p-projetos">
+            <div class="fundo-verde"></div>
+            <h1>PROJETOS</h1>
+        </section>
 
-                        <div class="tecnologias" data-anime="top">
-                            <p><span>-</span>HTML & CSS</p>
-                            <p class="mobile"><span>-</span>JavaScript</p>
-                            <!-- mobile -->
-                            <p class="mobile2">JavaScript<span>-</span></p>
-                            <!-- ------- -->
-                            <p><span>-</span>Node.js</p>
-                            <p class="mobile"><span>-</span>React JS</p>
-                            <!-- mobile -->
-                            <p class="mobile2">React JS<span>-</span></p>
-                            <!-- ------- -->
+        <section class="projetos container" id="projetos">
+            <div class="section-titulo">
+                <p><span>02.</span> Projetos</p>
+            </div>
+            <div class="content-project">
+                <!-- Isso é apenas um modelo a ser adcionado -->
+                <div class="content--individual-model">
+                    <div class="content--individual ">
+                        <div class="content-left">
+                            <img src="">
+                            <a target="_blank">Ir Para Projeto</a>
+                            <a class="repositorio" target="_blank">Repositório</a>
                         </div>
-                    </div>
-                </div>
-                <div class="sobre-mim-right" data-anime="bottom">
-                    <img src="./assets/img/perfilverde.png" alt="Perfil" class="perfilverde">
-                    <img src="./assets/img/perfil.png" alt="Perfil" class="perfil">
-                </div>
-            </section>
-            <section class="projetos" id="projetos">
-                <div class="section-titulo">
-                    <p><span>02.</span> Projetos</p>
-                </div>
-                <div class="content-project">
-                    <!-- Isso é apenas um modelo a ser adcionado -->
-                    <div class="content--individual-model">
-                        <div class="content--individual ">
-                            <div class="content-left">
-                                <img src="">
+                        <div class="content-right">
+                            <h1>--</h1>
+                            <div class="content-inside">
+                                <p class="p1">--</p>
+                            </div>
+                            <div class="go-to-site">
                                 <a target="_blank">Ir Para Projeto</a>
                                 <a class="repositorio" target="_blank">Repositório</a>
                             </div>
-                            <div class="content-right">
-                                <h1>--</h1>
-                                <div class="content-inside">
-                                    <p class="p1">--</p>
-                                </div>
-                                <div class="go-to-site">
-                                    <a target="_blank">Ir Para Projeto</a>
-                                    <a class="repositorio" target="_blank">Repositório</a>
-                                </div>
-                            </div>
                         </div>
-                    </div> <!-- MODELO -->
-                    <!-- Area que vai ser adicionado o modelo acima -->
-                    <div class="content-project-area"></div>
-                    <!--  -->
-                </div>
-            </section>
-            <section class="contato" id="contato">
-                <div class="section-titulo" data-anime="left">
-                    <p class="contato-titulo"><span>03.</span> Contato</p>
-                </div>
-                <div class="contato-titulo" data-anime="top">
-                    <h1>Minhas Redes Sociais</h1>
-                </div>
-            <div class="redes-sociais" data-anime="top">
-                    <nav>
-                        <a href="https://www.facebook.com/profile.php?id=100003250275126" target="_blank"></a>
+                    </div>
+                </div> <!-- MODELO -->
+                <!-- Area que vai ser adicionado o modelo acima -->
+                <div class="content-project-area"></div>
+                <!--  -->
+            </div>
+        </section>
 
-                        <a href="https://www.instagram.com/vitao_1603/?hl=pt-br" target="_blank"></a>
+        <section class="parallax p-contato">
+            <div class="fundo-verde"></div>
+            <h1>CONTATO</h1>
+        </section>
 
-                        <a href="https://www.linkedin.com/in/victor-hugo-alves-perricci-1603" target="_blank"></a>
+        <section class="contato container" id="contato">
+            <div class="section-titulo" data-anime="left">
+                <p class="contato-titulo"><span>03.</span> Contato</p>
+            </div>
+            <div class="contato-titulo" data-anime="top">
+                <h1>Minhas Redes Sociais</h1>
+            </div>
+        <div class="redes-sociais" data-anime="top">
+                <nav>
+                    <a href="https://www.facebook.com/profile.php?id=100003250275126" target="_blank"></a>
 
-                        <a href="https://api.whatsapp.com/send?phone=5511970521612&text=Ol%C3%A1!%20Olhei%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                            target="_blank"></a>
-                    </nav>
-                </div>
-            </section>
-        </div> <!-- container-principal -->
+                    <a href="https://www.instagram.com/vitao_1603/?hl=pt-br" target="_blank"></a>
+
+                    <a href="https://www.linkedin.com/in/victor-hugo-alves-perricci-1603" target="_blank"></a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5511970521612&text=Ol%C3%A1!%20Olhei%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                        target="_blank"></a>
+                </nav>
+            </div>
+        </section>
         <footer>
             <p>Victor Hugo © 2020 - Todos os direitos reservados</p>
         </footer>
