@@ -322,7 +322,6 @@ section {
 
 .home {
   padding: 110px 30px 100px 30px;
-  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +411,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 100px;
-  margin: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -572,7 +570,6 @@ section {
   display: -ms-flexbox;
   display: flex;
   padding: 100px;
-  margin: 30px;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -665,7 +662,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px;
-  margin: 30px;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -953,7 +949,6 @@ footer p {
             justify-content: center;
     height: auto;
     padding: 50px;
-    margin: 10px;
   }
   .sobre-mim .sobre-mim-left .tecnologias .mobile {
     display: none;
@@ -1081,7 +1076,6 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 50px;
-    margin: 10px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
