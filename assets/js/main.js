@@ -7,7 +7,6 @@ import initScrollSuave from './modules/scroll-suave.js'
 import {initShowMenu, initWhenScrollRemoveMenu} from './modules/menu-mobile.js'
 import initChangeHeader from './modules/change-header.js'
 
-
 initCloneProject(c, cs);
 initType(c, cs);
 initScrollAnimate(c, cs);

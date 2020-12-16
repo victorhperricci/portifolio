@@ -12,11 +12,15 @@ export default function initScrollSuave(c, cs) {
     backTop.addEventListener('click', scrollToIdOnClick)
 
     function scrollToIdOnClick(event) {
-        let menuHamb = c('nav ul');
         event.preventDefault();
         const to = getScrollTop(event.target) - 90;
         scrollToPosition(to);
-        menuHamb.classList.remove('open')
+        
+        
+        const menu = c('.header ul'); 
+        const menuHamburguer = c('.menu-hamb');
+        menu.classList.remove('active')
+        menuHamburguer.classList.remove('active')
     }
 
     function scrollToPosition(to) {
