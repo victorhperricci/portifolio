@@ -375,6 +375,7 @@
 
                 &:hover {
                     transform: scale(1);
+                    box-shadow: 0 0 0 0;
                 }
 
                 .content-left {
@@ -389,8 +390,6 @@
                         border-radius: 30px;
 
                         width: 100%;
-
-                        box-shadow: 0px 5px 7px 0px var(--green);
                     }
 
                    
@@ -432,9 +431,16 @@
                             font-weight: bold;
 
                             border: 1px solid var(--dark-navy);
+                            transition: all .5s;
+
+                            font-size: clamp(1.6rem, 2vw, 3rem );
+                        }   
+
+                        a:hover {
+                            background-color:  #0cbe95;
                         }
-                        
-                        .repositorio {
+
+                        .repositorio {  
                             border-radius: 0px 0px 30px 30px;
                         }
                     }
@@ -467,13 +473,8 @@
         margin: 0 auto;
         .content-project {
             .content--individual {
-                padding: 20px;
+                padding: 0px;
                 min-width: 250px;
-
-
-                .content-right h1 {
-                    font-size: 25px;
-                }
             }
         }
     }
@@ -581,13 +582,5 @@
     footer {
         padding: 10px;
     }
-    footer p {
-        font-size: 12px;
-    }
 }
 
-@media (max-width: 353px) {
-    footer p {
-        font-size: 10px;
-    }
-}

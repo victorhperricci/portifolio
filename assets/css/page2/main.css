@@ -215,8 +215,8 @@ section {
 }
 
 .shadow-active {
-  -webkit-box-shadow: 0px 5px 0px var(--green), 0px 6px 0px var(--green-tint);
-          box-shadow: 0px 5px 0px var(--green), 0px 6px 0px var(--green-tint);
+  -webkit-box-shadow: 0px 7px 0px var(--green), 0px 6px 0px var(--green-tint);
+          box-shadow: 0px 7px 0px var(--green), 0px 6px 0px var(--green-tint);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -242,11 +242,6 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-}
-
-.header input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
 }
 
 .header ul {
@@ -469,14 +464,6 @@ section {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-family: "Share Tech Mono", monospace;
-}
-
-.projetos .content-project .content--individual:hover {
-  -webkit-box-shadow: 0 0 20px var(--green);
-          box-shadow: 0 0 20px var(--green);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  cursor: pointer;
 }
 
 .projetos .content-project .content--individual .content-left {
@@ -1134,6 +1121,8 @@ footer p {
   .projetos .content-project .content--individual:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
   }
   .projetos .content-project .content--individual .content-left {
     display: block;
@@ -1152,8 +1141,6 @@ footer p {
        object-fit: cover;
     border-radius: 30px;
     width: 100%;
-    -webkit-box-shadow: 0px 5px 7px 0px var(--green);
-            box-shadow: 0px 5px 7px 0px var(--green);
   }
   .projetos .content-project .content--individual .content-right {
     padding-bottom: 0;
@@ -1188,6 +1175,12 @@ footer p {
     color: var(--dark-navy);
     font-weight: bold;
     border: 1px solid var(--dark-navy);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-size: clamp(1.6rem, 2vw, 3rem);
+  }
+  .projetos .content-project .content--individual .content-right .go-to-site a:hover {
+    background-color: #0cbe95;
   }
   .projetos .content-project .content--individual .content-right .go-to-site .repositorio {
     border-radius: 0px 0px 30px 30px;
@@ -1203,11 +1196,8 @@ footer p {
     margin: 0 auto;
   }
   .projetos .content-project .content--individual {
-    padding: 20px;
+    padding: 0px;
     min-width: 250px;
-  }
-  .projetos .content-project .content--individual .content-right h1 {
-    font-size: 25px;
   }
 }
 
@@ -1288,15 +1278,6 @@ footer p {
 @media (max-width: 476px) {
   footer {
     padding: 10px;
-  }
-  footer p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 353px) {
-  footer p {
-    font-size: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -49,11 +49,7 @@
             transition: 0.4s;
             font-family: $font-tec;
 
-            &:hover {
-                box-shadow: 0 0 20px var(--green);
-                transform: scale(1.1);
-                cursor: pointer;
-            }
+          
 
             .content-left {
                 display: flex;
