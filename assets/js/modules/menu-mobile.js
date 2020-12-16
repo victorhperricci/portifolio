@@ -10,7 +10,7 @@ export function initShowMenu(c) {
         menu.classList.toggle('active')
         menuHamburguer.classList.toggle('active')
 
-        initClickOutside(menu, ['click', 'touchstart'], () => {
+        initClickOutside(menu, ['click'], () => {
             menu.classList.remove('active')
             menuHamburguer.classList.remove('active')
         })
