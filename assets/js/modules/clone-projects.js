@@ -20,11 +20,7 @@ export function initCloneProject() {
     
         projectItem.querySelector('.go-to-site a').setAttribute('href', item.botaoADiretorio)
         projectItem.querySelector('.go-to-site a.repositorio').setAttribute('href', item.botaoRepositorio)
-    
-        projectItem.querySelector('.content-left a').setAttribute('href', item.botaoADiretorio)
-        projectItem.querySelector('.content-left a.repositorio').setAttribute('href', item.botaoRepositorio)
-    
-    
+        
         c('.content-project-area').append(projectItem);
     });
 }
