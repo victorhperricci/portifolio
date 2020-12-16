@@ -373,6 +373,10 @@
                 display: flex;
                 flex-direction: column;
 
+                &:hover {
+                    transform: scale(1);
+                }
+
                 .content-left {
                     display: block;
                     align-items: center;

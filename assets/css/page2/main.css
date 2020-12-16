@@ -1131,6 +1131,10 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .projetos .content-project .content--individual:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .projetos .content-project .content--individual .content-left {
     display: block;
     -webkit-box-align: center;
