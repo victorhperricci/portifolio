@@ -778,8 +778,8 @@ footer p {
     opacity: 0;
   }
   [data-menuHamb].active [data-menu="3"] {
-    -webkit-transform: rotate(135deg) translate3d(-12px, 13px, 0);
-            transform: rotate(135deg) translate3d(-12px, 13px, 0);
+    -webkit-transform: rotate(-45deg) translate3d(12px, -13px, 0);
+            transform: rotate(-45deg) translate3d(12px, -13px, 0);
   }
   .header {
     padding: 10px 20px;
