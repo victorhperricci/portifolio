@@ -49,5 +49,18 @@ let projectsJSON = [
             "HTML",
             "JavaScript"
         ]
+    },
+    {
+        id: 5,
+        src: "./assets/img/imgsProjects/happy.png",
+        titulo: "Happy",
+        paragrafo1: "Site feito com o BootCamp da RocketSeat",
+        botaoADiretorio: "https://happywebsite.herokuapp.com/",
+        botaoRepositorio: "https://github.com/VictorHAP1603/HappyNLW",
+        tecnologias: [
+            "HTML/CSS",
+            "JavaScript",
+            "Node"
+        ]
     }
 ]
