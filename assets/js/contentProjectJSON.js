@@ -62,5 +62,18 @@ let projectsJSON = [
             "JavaScript",
             "Node"
         ]
+    },
+    {
+        id: 6,
+        src: "./assets/img/imgsProjects/devfinances.png",
+        titulo: "Dev Finances",
+        paragrafo1: "Site feito com a Maratona Discovery - RocketSeat",
+        botaoADiretorio: "https://finances-dev.netlify.app/",
+        botaoRepositorio: "https://github.com/VictorHAP1603/devFinances",
+        tecnologias: [
+            "HTML/CSS",
+            "JavaScript"
+        ]
     }
+    
 ]
