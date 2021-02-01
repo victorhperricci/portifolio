@@ -74,6 +74,18 @@ let projectsJSON = [
             "HTML/CSS",
             "JavaScript"
         ]
+    },
+    {
+        id: 7,
+        src: "./assets/img/imgsProjects/calculadora.png",
+        titulo: "Calculadora",
+        paragrafo1: "Feito por eu mesmo para testar o conhecimento!",
+        botaoADiretorio: "https://calculadora-online.netlify.app/",
+        botaoRepositorio: "https://github.com/VictorHAP1603/calculadora",
+        tecnologias: [
+            "HTML/CSS",
+            "JavaScript"
+        ]
     }
     
 ]
