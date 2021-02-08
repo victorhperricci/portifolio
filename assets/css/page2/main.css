@@ -423,6 +423,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .projetos .section-titulo::before {
@@ -439,20 +440,38 @@ section {
 }
 
 .projetos .content-project {
-  padding: 50px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.projetos .content-project .content-project-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .projetos .content-project .content--individual {
-  margin-top: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .projetos .content-project .content--individual-model {
   display: none;
 }
 
+.projetos .content-project .content--individual.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .projetos .content-project .content--individual {
   width: 100%;
+  max-width: 800px;
   height: auto;
+  margin: 0 20px;
   border-radius: 30px;
   border: 3px solid var(--green-tint);
   display: -webkit-box;
@@ -464,6 +483,11 @@ section {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-family: "Share Tech Mono", monospace;
+  opacity: .3;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .projetos .content-project .content--individual .content-left {
@@ -549,6 +573,38 @@ section {
 
 .projetos .content-project .content--individual .content-right .go-to-site a:hover {
   background-color: var(--green-tint);
+}
+
+[data-control] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control] li {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--green);
+  border-radius: 50%;
+  text-indent: -999px;
+  opacity: .8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+[data-control] li.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /* SOBRE MIM */
@@ -1093,19 +1149,6 @@ footer p {
   .projetos .section-titulo::before {
     content: "";
     display: none;
-  }
-  .projetos .content-project {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .projetos .content-project .content--individual {
     padding-bottom: 0px;
