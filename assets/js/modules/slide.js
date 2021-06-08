@@ -57,13 +57,19 @@ class Slide {
   }
 
   changeSlideOnEnd() {
-    if (this.dist.movement > 120 && this.index.next !== undefined) {
+    if (this.dist.movement > 500 && this.index.next !== undefined) {
       this.activeNextSlide();
-    } else if (this.dist.movement < 120 && this.index.prev !== undefined) {
+      this.dist.movement = 0;
+      console.log("antes");
+    } else if (this.dist.movement < 500 && this.index.prev !== undefined) {
       this.activePrevSlide();
+      console.log("depois");
+      this.dist.movement = 0;
     } else {
       this.changeSlide(this.index.active);
     }
+
+    console.log(this.dist.movement);
   }
 
   addSlideEvents() {

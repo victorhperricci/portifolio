@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-// FONTE 
+// FONTE
 
-$font-tec: 'Share Tech Mono', monospace;
+$font-tec: "Share Tech Mono", monospace;
 $green: #64ffda;
 
-:root {  
-    --dark-navy: #020c1b;
-    --lightest-navy: #384663;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
-    --green: #64ffda;
-    --green-tint: rgba(26, 59, 52, 0.1);
+:root {
+  --dark-navy: #020c1b;
+  --lightest-navy: #384663;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --green: #64ffda;
+  --green-tint: rgba(26, 59, 52, 0.1);
 
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 // .dark-mode:root {
@@ -32,63 +32,66 @@ $green: #64ffda;
 // }
 
 body {
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 /* Container que pega tudo */
 .container-geral {
-    width: 100%;
-    background-color: var(--dark-navy);
+  width: 100%;
+  background-color: var(--dark-navy);
 }
 
+.content--individual-model {
+  display: none !important;
+}
 
 /* Delimita o site */
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 section {
-    height: 100vh;
+  height: 100vh;
 }
 
 /* CLASSES */
 
 .section-titulo {
-    p {
-        font-size: clamp(3rem, 3vw, 7rem);
-        color: var(--lightest-slate);
-        font-family: $font-tec;
-        p::after {
-            content: '';
-            display: inline-block;
-            position: relative;
-            width: 300px;
-            height: 1px;
-            background-color: var(--lightest-navy);
-            margin-left: 20px;
-            margin-bottom: 7px;
-        }
-
-        span {
-            color: var(--green);
-        }
+  p {
+    font-size: clamp(3rem, 3vw, 7rem);
+    color: var(--lightest-slate);
+    font-family: $font-tec;
+    p::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 300px;
+      height: 1px;
+      background-color: var(--lightest-navy);
+      margin-left: 20px;
+      margin-bottom: 7px;
     }
+
+    span {
+      color: var(--green);
+    }
+  }
 }
 
 @keyframes backtop {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
-    100% {
-        transform: translateY(1px);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
 }

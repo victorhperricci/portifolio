@@ -18,7 +18,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -30,6 +30,10 @@ img {
 .container-geral {
   width: 100%;
   background-color: var(--dark-navy);
+}
+
+.content--individual-model {
+  display: none !important;
 }
 
 /* Delimita o site */
@@ -50,7 +54,7 @@ section {
 }
 
 .section-titulo p p::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: relative;
   width: 300px;
